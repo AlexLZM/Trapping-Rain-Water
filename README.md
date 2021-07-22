@@ -30,9 +30,11 @@ n == height.length
 0 <= height[i] <= 105
 
 ### Strategy
-the water a block can hold on it is the difference between its height and (**the value** :=min(max(heights to the left), max(heights to the right)))
+the water a block can hold on it is the difference between its height and 
 
-We can use 2 pointer tech. to keep track of **the value** .
+(**the value** :=min(max(heights to the left), max(heights to the right))).
+
+We can use 2 pointer tech. to keep track of each side's max height to compute **the value** .
 
 Pseudo code:
 1. left pointer starts at index 0, right pointer starts at len(height) - 1;
