@@ -5,11 +5,11 @@ def trapRainWater(height):
     r = len(height) - 1
     
     while l < r:
-        if (left := height[l]) < (right := height[r]):
-            if l_max < left:
+        if (left := height[l]) < (right := height[r]): # manipulate smaller side
+            if l_max < left: # update side max
                 l_max = left
             else:
-                water += l_max - left
+                water += l_max - left # add water 
             l += 1
         else:
             if r_max < right:
