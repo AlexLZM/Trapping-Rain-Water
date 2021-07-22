@@ -9,7 +9,7 @@ def trapRainWater(height):
             if l_max < left: # update side max
                 l_max = left
             else:
-                water += l_max - left # add water 
+                water += l_max - left # add water on it
             l += 1
         else:
             if r_max < right:
