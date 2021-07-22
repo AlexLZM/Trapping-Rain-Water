@@ -11,7 +11,7 @@ def trapRainWater(height):
             else:
                 water += l_max - left
             l += 1
-         else:
+        else:
             if r_max < right:
                 r_max = right
             else:
