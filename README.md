@@ -36,7 +36,7 @@ the water a block can hold on it is the difference between its height and
 
 We can use 2 pointer tech. to keep track of each side's max height to compute **the value** .
 
-Pseudo code:
+Implementation:
 1. left pointer starts at index 0, right pointer starts at len(height) - 1;
 2. do operation on the smaller side till left index == right index == argmax(height):
     1. if the current height is greater than the side max height, update the side max height
